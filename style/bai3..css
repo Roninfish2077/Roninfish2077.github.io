@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background:url(../img/D1307_52_005_0004_600.jpg);
+}
+#contanner{
+	width: 95%;
+	margin: 0 auto;
+}
+
+.traidat{
+	width: 250px;
+    position: absolute;
+	top: 250px;
+	left: 800px;
+	animation-name: traidat;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.alien{
+	width: 350px;
+	position: absolute;
+	top: 350px;
+	left: 1200px;
+	animation: alien 3s infinite linear;
+	
+}
+.thienthach{
+	width: 200px;
+	position: absolute;
+	left: 300px;
+	top: 450px;
+}
+.phithuyen{
+	width: 400px;
+    position: absolute;
+	top: 400px;
+	left: 1400px;
+	animation: phithuyen 5s infinite linear;
+	
+}
+.saotho{
+	width: 250px;
+    position: absolute;
+	left: 200px;
+	top: 150px;
+}
+@keyframes traidat{
+	from{
+		transform: rotate(0)
+	}
+	to{
+	   transform: rotate(360deg)
+	}
+}
+@keyframes alien{
+	0%{transform:translateY(0px)}
+	50%{transform:translateY(30px)}
+	100%{transform:translateY(0px)}
+	}
+@keyframes phithuyen{
+	0%{transform:translateY(0px)}
+	25%{transform:translateY(30px)}
+	50%{transform:translateY(50px)}
+	75%{transform:translateY(30px)}
+	100%{transform:translateY(0px)}
+	}
+
+
+

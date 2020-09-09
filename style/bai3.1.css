@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0px;padding: 0px;}
+.clear{
+	clear: both;
+}
+
+#contaner{
+	width: 50%;
+	height: 580px;
+	background:  #00A391;
+	margin: 0 auto;
+	margin-top: 50px;
+	overflow: hidden;
+	position: relative;
+}
+.img{float: left;}
+.img1{
+	width: 100px;
+	position: absolute;
+	top: 230px;
+	left: 500px;
+	animation: nhun1 1.5s infinite linear;
+}
+.img2 {
+	width: 200px;
+	height: 182px;
+	position: absolute;
+	top: 230px;
+	left: 100px;
+	animation: nhun2 1.5s infinite linear;
+}
+.banhxe1, .banhxe2{
+	width: 100px;
+	position: absolute;
+	animation: banhxe 1s infinite linear;
+	
+}
+.banhxe1{
+	top: 380px;
+	left: 150px;
+}
+.banhxe2{
+	top: 380px;
+	left: 500px;
+}
+.cay {
+	width: 150px;
+	position: absolute;
+	top: 220px;
+	left: 1000px;
+	animation: cay 10s infinite linear;
+	
+}
+.may{width: 200px;
+	position: absolute;
+	left: 1500px;
+	animation: may 8s infinite linear;
+}
+.mattroi{
+	width: 250px;
+	position: absolute;
+	right: 50px;
+	animation: mattroi 3s infinite linear;
+}
+
+hr{
+	border: #FFFFFF solid 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 100px;
+}
+@keyframes banhxe{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(560deg);
+	}
+	
+}
+@keyframes cay{
+	0%{transform: translate(0px)}
+	50%{transform: translate(-1000px)}
+	100%{transform: translate(-2000px)}
+	
+}
+@keyframes may{
+	0%{transform: translate(0px)}
+	50%{transform: translate(-1000px)}
+	100%{transform: translate(-2000px)}
+	
+}
+@keyframes nhun1{
+	0%{transform: translateY(-5px)}
+	50%{transform: translateY(5px)}
+	100%{transform: translateY(-5px)}
+}
+@keyframes nhun2{
+	0%{transform: translateY(5px)}
+	50%{transform: translateY(-5px)}
+	100%{transform: translateY(5px)}
+}
+@keyframes mattroi{
+	0%{transform:translateX(10px) translateY(10px)}
+	50%{transform:translateX(-10px) translateY(-10px)}
+	100%{transform:translateX(10px) translateY(10px)}
+}

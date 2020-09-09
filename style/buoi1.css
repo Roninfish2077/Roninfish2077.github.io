@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+#khungall{ width: 70%; height: 100vh; background: #00FFC3; margin: 0 auto; position: relative;}
+#khunghinh{ margin-top: 50px; height: 200px; display: flex; justify-content: center;}
+
+.hinh{
+	width: 290px;
+	height: 180px ;
+	background: #FF0004;
+	float: left;
+	margin: 30px;
+}
+.hinh img{width: 100%; height:180px;}
+.hinh img:hover{
+	transform: scale(1.2);
+	transition: all 0.3s ease-in;
+	box-shadow: 0px 0px 62px 8px rgba(0,0,0,0.51);
+}
+
+#khungbox{ margin-top: 100px; display: flex; justify-content: center;}
+.box{width: 150px; height: 150px; background: #001DFF; margin: 0px 50px 0px 50px;}
+
+.box1:hover{
+	border-radius: 50%;
+	transition: all 0.3s ease-in;
+	background: #FF0004;
+}
+.box2:hover{ transform: skewX(-20deg); transition: all 0.3s ease-in; background-color: #FF8600;}
+.box3:hover{background: #FF00CE; transform: scale(1.5) translate(50px,30px);transition: all 0.3s ease-in;}
+.box4:hover{border-radius: 50%; transform: rotate(1turn);transition: all 1s ease-in; background: #556800;}
+
+
+
+#khungxe{
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	position: relative;
+}
+#minhbeo{
+	width: 200px;
+	float: left;
+     transition: 2s;
+}
+#minhbeo img{
+	width: 100%;
+}
+#girl{
+	width: 200px;
+	float: left;
+	margin-left: 50px;
+     transition: 2s;
+}
+#girl img{
+	width: 100%;
+}
+.boxgiay{
+	width: 100px;
+	height: 100px;
+	float: left;
+
+}
+.boxgiay img{width: 100%;}
+.giay1{
+	position: absolute;
+	top: 130px;
+	left: 45px;
+	transition: 2s;
+}
+.giay2{
+	position: absolute;
+	top: 130px;
+	left: 330px;
+	transition: 2s;
+	
+}
+
+#khungxe:hover #minhbeo{
+	transform: translate(600px);
+}
+#khungxe:hover #girl{
+	transform: translate(600px);
+}
+#khungxe:hover .giay1{
+	transform: translate(600px) rotate(6turn);
+}
+#khungxe:hover .giay2{
+	transform: translate(600px) rotate(6turn);
+	
+	
+}
